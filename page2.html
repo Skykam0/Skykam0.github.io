@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blank HTML Project</title>
+
+    <style type="text/css">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            background-color: #F3F5F1;
+        }
+        header{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bold;
+            font-size: 5rem;
+            text-align: center;
+            color: #960811;
+            padding-top: 5%;
+        }
+        article{
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: #706764;
+            margin-bottom: -1%;
+            padding: 5% 5% 10% 5%;
+        }
+        nav>ul>span#selected{
+            font-weight: 1000;
+            color : black;
+        }
+        nav{
+            font-family: 'Archivo black', sans-serif;
+            font-weight: 800;
+            margin-top: 3%;
+            background-color:darkgrey;
+            padding: .25% 1% .25% .1%;
+            border: 3px solid;
+            border-color: black;
+        }
+        nav>ul>li>a{
+            color: #F3F5F1;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #690102;
+            padding-bottom: 1%;
+        }
+        #wrapper{
+            width: 80%;
+            margin: auto;
+        }
+        table, th, td{
+            border: 3px  black solid;
+            border-collapse: collapse;
+            background-color: gray;
+            text-align: center;
+            padding: 1%;
+        }
+        table{
+            width: 100%;
+        }
+        img{
+            text-align: center;
+            width: 100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #LogoHeaderWrapper>figure>img{
+            margin : auto;
+            padding: auto;
+            width: 100%;
+        }
+        footer{
+            clear: both;
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 2% 0% 2% 0%;
+            font-family: archivo, sans-serif;
+            
+        }
+        p{
+            margin: 2% 0;
+        }
+        #selected{
+            outline: 2px solid black;
+            padding: .01% 0% .12%  0%;
+            margin: 0% -.25% 0% 0%;
+            background-color: grey;
+        }
+        nav>ul>li>a:hover, nav>ul>li>a:focus{
+            outline: 2px solid black;
+            padding: .01% 0% .12%  0;
+            margin-right: -.03%;
+            background-color: lightgrey;
+            color: grey;
+        }
+        nav>ul>li{
+            display: inline;
+        }
+        .Article1 {
+            float: left;
+            width: 50%;
+        }
+        .Article2 {
+            float: right;
+            width: 50%;
+        }
+        .content {
+            padding-bottom: 10%;
+            background-color: #706764;
+            overflow: auto;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 0;
+        }
+
+        ul ul {
+            padding-left: 3%;
+            list-style-type: circle;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>Gemstones</header>
+    
+    <nav>
+        <ul style="list-style: none;">
+            <li><a href="index.html">Page 1</a></li>
+            <li><span id="selected">Page 2</span></li>
+            <li><a href="Page3.html">Page 3</a></li>
+            <li><a href="Page4.html">Page 4</a></li>
+            <li><a href="Page5.html">Page 5</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="Article1">
+            <article>
+
+            <h2>Diamond</h2>
+            <p>
+            Diamond is a gemstone formed by cutting a raw diamond. Diamonds have high monetary value as one of the best-known and most sought-after gems, and they have been 
+            used as decorative items since ancient times.
+            </p>
+            <h2>Hardness</h2>
+            <p>
+            The hardness of diamond and its high dispersion of light—giving the diamond its characteristic "fire"—make it useful for industrial applications and desirable as 
+            jewelry. Diamonds are such a highly traded commodity that multiple organizations have been created for grading and certifying them based on the "four Cs", which
+            are color, cut, clarity, and carat. Other characteristics, such as presence or lack of fluorescence, also affect the desirability and thus the value of a 
+            diamond used for jewelry.
+            </p>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Brillanten.jpg" alt="Diamond">
+            </figure>
+            </article>
+        </div>
+        <div class="Article2">
+            <article>
+                <h2>Characteristics</h2>
+                <p>
+                The most familiar usage of diamonds today is as gemstones used for adornment—a usage which dates back into antiquity. The dispersion of white light into spectral
+                colors is the primary gemological characteristic of gem diamonds. In the twentieth century, gemologists have developed methods of grading diamonds and other 
+                gemstones based on the characteristics most important to their value as a gem. Four characteristics known informally as the "four Cs" are now commonly used as 
+                the basic descriptors of diamonds: carat, cut, color, and clarity. This system was developed by Gemological Institute of America in 1953 as internationally 
+                recognized standard to evaluate diamonds' characteristics.
+                </p>
+                <p>
+                Most gem diamonds are traded on the wholesale market based on single values for each of the four Cs; for example knowing that a diamond is rated as 1.5 carats
+                (300 mg), VS2 clarity, F color, excellent cut round brilliant, is enough to reasonably establish an expected price range. More detailed information from within 
+                each characteristic is used to determine actual market value for individual stones. Consumers who purchase individual diamonds are often advised to use the four 
+                Cs to pick the diamond that is "right" for them.
+                </p>
+                <h2>Weight</h2>
+                <p>
+                The carat weight measures the mass of a diamond. One carat is defined as 200 milligrams (about 0.007 ounces avoirdupois). The point unit—equal to one 
+                one-hundredth of a carat (0.01 carat, or 2 mg)—is commonly used for diamonds of less than one carat. All else being equal, the price per carat increases 
+                with carat weight, since larger diamonds are both rarer and more desirable for use as gemstones.
+                </p>
+                <p>
+                The carat weight measures the mass of a diamond. One carat is defined as 200 milligrams (about 0.007 ounces avoirdupois). The point unit—equal to one 
+                one-hundredth of a carat (0.01 carat, or 2 mg)—is commonly used for diamonds of less than one carat. All else being equal, the price per carat increases 
+                with carat weight, since larger diamonds are both rarer and more desirable for use as gemstones.
+                </p>
+                <br>
+                <h2>List of Other Rare Gemstones</h2>
+                
+                <ul>
+                <li>Painite
+                    <ul>
+                    <li>Discovered: 1956</li>
+                    <li>Location: Ohngaing, Myanmar</li>
+                    <li>Named after: British gemologist Arthur Charles Davy Pain</li>
+                    <li>Notes: Once considered the rarest mineral on Earth</li>
+                    </ul>
+                </li>
+
+                <li>Tanzanite
+                    <ul>
+                    <li>Discovered: 1967</li>
+                    <li>Location: Northern Tanzania</li>
+                    <li>Notes: Receives vibrant blue from being heated; supply may decline in next 30 years, rarer than diamonds</li>
+                    </ul>
+                </li>
+
+                <li>Hibonite
+                    <ul>
+                    <li>Discovered: 1956</li>
+                    <li>Location: Madagascar</li>
+                    <li>Named after: French geologist Paul Hibon</li>
+                    <li>Notes: Gem-quality hibonite has only been found in Myanmar</li>
+                    </ul>
+                </li>
+
+                <li>Red Beryl (Bixbite)
+                    <ul>
+                    <li>Discovered: 1904</li>
+                    <li>Location: Near Beaver, Utah, USA</li>
+                    <li>Named after: American mineralogist Maynard Bixby</li>
+                    </ul>
+                </li>
+
+                <li>Jeremejevite
+                    <ul>
+                    <li>Discovered: 1883</li>
+                    <li>Location: Russia</li>
+                    <li>Named after: Pawel Wladimirowich Jeremejew (1830–1899)</li>
+                    </ul>
+                </li>
+
+                <li>Chambersite
+                    <ul>
+                    <li>Discovered: 1957</li>
+                    <li>Location: Chambers County, Texas, USA</li>
+                    <li>Notes: Named after the location of the deposit</li>
+                    </ul>
+                </li>
+
+                <li>Taaffeite
+                    <ul>
+                    <li>Discovered: 1945</li>
+                    <li>Named after: Irish gemologist Count Edward Charles Richard Taaffe</li>
+                    </ul>
+                </li>
+
+                <li>Musgravite
+                    <ul>
+                    <li>Discovered: 1967</li>
+                    <li>Location: Musgrave Mountains, South Australia</li>
+                    <li>Notes: Named for the location</li>
+                    </ul>
+                </li>
+
+                <li>Black Opal
+                    <ul>
+                    <li>Location: New South Wales, Australia</li>
+                    <li>Notes: Rarest type of opal; darker composition with a variety of colors</li>
+                    </ul>
+                </li>
+
+                <li>Grandidierite
+                    <ul>
+                    <li>Discovered: 1902</li>
+                    <li>Location: Tuléar Province, Madagascar</li>
+                    <li>Discovered by: Antoine François Alfred Lacroix</li>
+                    <li>Named after: French naturalist Alfred Grandidier (1836–1912)</li>
+                    </ul>
+                </li>
+
+                <li>Poudretteite
+                    <ul>
+                    <li>Discovered: 1965</li>
+                    <li>Location: Poudrette Quarry, Canada</li>
+                    <li>Named after: The Poudrette family (owners of the quarry)</li>
+                    </ul>
+                </li>
+
+                <li>Serendibite
+                    <ul>
+                    <li>Discovered: 1902</li>
+                    <li>Location: Sri Lanka</li>
+                    <li>Discovered by: Sunil Palitha Gunasekera</li>
+                    <li>Named after: Serendib, the old Arabic name for Sri Lanka</li>
+                    </ul>
+                </li>
+
+                <li>Zektzerite
+                    <ul>
+                    <li>Discovered: 1968</li>
+                    <li>Location: Kangaroo Ridge, Washington, USA</li>
+                    <li>Discovered by: Bart Cannon</li>
+                    <li>Named after: Mathematician and geologist Jack Zektzer</li>
+                    </ul>
+                </li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</div>
+<footer>
+    All content is from <a href="https://en.wikipedia.org">Wikipedia</a> and is licensed under 
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+</footer>
+</body>
+</html>
