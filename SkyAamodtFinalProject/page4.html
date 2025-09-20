@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blank HTML Project</title>
+
+    <style type="text/css">
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            background-color: #F3F5F1;
+        }
+        header{
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bold;
+            font-size: 5rem;
+            text-align: center;
+            color: #960811;
+            padding-top: 5%;
+        }
+        article{
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            background-color: #706764;
+            margin-bottom: -1%;
+            padding: 5% 5% 10% 5%;
+        }
+        nav>ul>span#selected{
+            font-weight: 1000;
+            color : black;
+        }
+        nav{
+            font-family: 'Archivo black', sans-serif;
+            font-weight: 800;
+            margin-top: 3%;
+            background-color:darkgrey;
+            padding: .25% 1% .25% .1%;
+            border: 3px solid;
+            border-color: black;
+        }
+        nav>ul>li>a{
+            color: #F3F5F1;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #690102;
+            padding-bottom: 1%;
+        }
+        #wrapper{
+            width: 80%;
+            margin: auto;
+        }
+        table, th, td{
+            border: 3px  black solid;
+            border-collapse: collapse;
+            background-color: gray;
+            text-align: center;
+            padding: 1%;
+        }
+        table{
+            width: 100%;
+        }
+        img{
+            text-align: center;
+            margin-left: 25%;
+            width: 50%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #LogoHeaderWrapper>figure>img{
+            margin : auto;
+            padding: auto;
+            width: 100%;
+        }
+        footer{
+            clear: both;
+            text-align: center;
+            font-size: 0.8rem;
+            padding: 2% 0% 2% 0%;
+            font-family: archivo, sans-serif;
+            
+        }
+        p{
+            margin: 2% 0;
+        }
+        #selected{
+            outline: 2px solid black;
+            padding: .01% 0 .12%  0%;
+            margin: 0% -.25% 0% 0%;
+            background-color: grey;
+        }
+        nav>ul>li>a:hover, nav>ul>li>a:focus{
+            outline: 2px solid black;
+            padding: .01% 0% .12%  0;
+            background-color: lightgrey;
+            color: grey;
+            margin-right: -.09%;
+        }
+        nav>ul>li{
+            display: inline;
+        }
+        .Article1 {
+            float: left;
+            width: 50%;
+        }
+        .Article2 {
+            float: right;
+            width: 50%;
+        }
+        .content {
+            padding-bottom: 10%;
+            background-color: #706764;
+            overflow: auto;
+                }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>Gemstones</header>
+    
+    <nav>
+        <ul style="list-style: none;">
+            <li><a href="index.html">Page 1</a></li>
+            <li><a href="Page2.html">Page 2</a></li>
+            <li><a href="Page3.html">Page 3</a></li>
+            <li><span id="selected">Page 4</span></li>
+            <li><a href="Page5.html">Page 5</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="Article1">
+            <article>
+
+            <h2>Emerald</h2>
+            <p>
+                Emerald is a gemstone and a variety of the mineral beryl (Be3Al2(SiO3)6) colored green by trace amounts of chromium or sometimes vanadium. Beryl has a 
+                hardness of 7.5–8 on the Mohs scale. Most emeralds have many inclusions, so their toughness (resistance to breakage) is classified as generally poor. 
+                Emerald is a cyclosilicate. It occurs mainly in association with quartz, muscovite, albite, schorl, microcline, fluorite, smoky quartz and elbaite.
+            </p>
+            <h2>Etymology</h2>
+            <p>
+                The word "emerald" is derived (via Old French: esmeraude and Middle English: emeraude), from Vulgar Latin: esmaralda/esmaraldus, a variant of Latin smaragdus, 
+                which was via Ancient Greek: σμάραγδος (smáragdos; "green gem"). The Greek word may have a Semitic, Sanskrit or Persian origin. According to Webster's 
+                Dictionary the term emerald was first used in the 14th century.
+            </p>
+            </figure>
+            </article>
+        </div>
+        <div class="Article2">
+            <article>
+                <h2>Properties determining value</h2>
+                <p>
+                Emeralds, like all colored gemstones, are graded using four basic parameters known as "the four Cs": color, clarity, cut and carat weight. Normally, in 
+                grading colored gemstones, color is by far the most important criterion. However, in the grading of emeralds, clarity is considered a close second. A fine 
+                emerald must possess not only a pure verdant green hue as described below, but also a high degree of transparency to be considered a top gemstone.
+                </p>
+                <h2>Color</h2>
+                <p>
+                n gemology, color is divided into three components: hue, saturation, and tone. Emeralds occur in hues ranging from yellow-green to blue-green, with the 
+                primary hue necessarily being Dark green. Yellow and blue are the normal secondary hues found in emeralds. Only gems that are medium to dark in tone are 
+                considered emeralds; light-toned gems are known instead by the species name green beryl. The finest emeralds are approximately 75% tone on a scale where 0%
+                 tone is colorless and 100% is opaque black. In addition, a fine emerald will be saturated and have a hue that is bright (vivid). Gray is the normal saturation 
+                 modifier or mask found in emeralds; a grayish-green hue is a dull-green hue
+                </p>
+            </article>
+        </div>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/5_Emeralds_from_Colombia.JPG/250px-5_Emeralds_from_Colombia.JPG" alt="Emerald">
+        </figure>
+    </div>
+</div>
+<footer>
+    All content is from <a href="https://en.wikipedia.org">Wikipedia</a> and is licensed under 
+    <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>
+</footer>
+</body>
+</html>
